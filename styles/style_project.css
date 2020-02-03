@@ -1,0 +1,174 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+/* ================================================= HEADER start ==================================================== */
+header nav{
+    padding: 17px 0;
+}
+header nav .container{
+    flex-direction: row-reverse;
+}
+header nav .container button:focus{
+    outline: none;
+}
+header ul li a{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: #007d2f;
+}
+/* ================================================= HEADER end ==================================================== */
+
+/* ================================================= MAIN START ==================================================== */
+.project{
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.carousel-inner{
+    height: 570px;
+    overflow: visible;
+}
+
+.carousel-item h2{
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    color: black;
+    text-transform: capitalize;
+    line-height: 21px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.carousel-item p{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+}
+.carousel-item ul li{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.carousel-item ul li span{
+    font-family: 'NunitoSans Bold';
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+.carousel-info{
+    padding-top: 100px;
+}
+
+.carousel-item .col-lg-5 img{
+    position: absolute;
+    top: 0;
+    left: 120%;
+    object-fit: contain;
+    object-position: center;
+}
+.carousel-menu{
+    background: #007d2f;
+}
+.carousel-menu .row{
+    height: 100px;
+    position: relative;
+}
+.carousel-menu .row a{
+    position: absolute;
+    bottom: 0;
+    opacity: 100%;    
+}
+.carousel-menu a{
+    text-transform: uppercase;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 84px;
+    color: white;
+    margin: 0;
+    opacity: 100%;
+}
+.pe-7s-angle-left,
+.pe-7s-angle-right{
+    color: black;
+    font-size: 24px;
+    line-height: 60px;
+}
+.carousel-menu ol li{
+    width: 6px;
+    height: 6px;
+    border-top: none;
+    border-bottom: none;
+}
+.carousel-menu ol{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 100%;  
+    width: 24px;
+    height: 24px;
+    margin: auto auto;
+}
+/* ================================================= MAIN end ==================================================== */
+
+
+/* ================================================= FOOTER start ==================================================== */
+.footer-content{
+    background: #141414;
+}
+footer .row{
+    height: 284px;
+}
+footer .footer-description_1 p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+}
+footer .footer-description_1 p:nth-child(2){
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_2 p{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_3 ul li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_3 ul li a:hover{
+    text-decoration: none;
+}
+/* ================================================= FOOTER end ==================================================== */
+@media(max-width:767px){
+    header nav .container{
+        flex-direction: row;
+    }
+    main .carousel-info img{
+        display: none;
+    }
+    .footer-content{
+        padding-top: 20px;
+    }
+    main .carousel-menu .carousel-control-prev{
+       height: 100px;
+    }
+}    

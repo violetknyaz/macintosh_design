@@ -1,0 +1,499 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+/* ================================================= HEADER start ==================================================== */
+header{
+    height: 670px;
+    background: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header nav{
+    padding: 17px;
+    margin-bottom: 74px;
+}
+header nav .container{
+    flex-direction: row-reverse;
+}
+header nav button:focus{
+outline: none;
+}
+header ul li a{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: #007d2f;
+}
+header .col-lg-5{
+    padding: 0;
+}
+header .col-lg-5 h1{
+    font-family: 'Montserrat Medium';
+    font-size: 35px;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+header .col-lg-5 p{
+    font-family: 'Montserrat Thin';
+    font-size: 15.36px;
+    color: #787878;
+    margin-bottom: 53px;
+}
+header .col-lg-5 a{
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 22px 57px 23px;
+    line-height: 9px;
+    background: #007d2f;
+}
+/* ================================================= HEADER end ==================================================== */
+
+
+
+/* ================================================= MAIN START ==================================================== */
+main .c1 .col-md-6{
+    padding: 96px 0 42px 0;
+    margin: 0 auto;
+}
+main .c1 .col-md-6 h2{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 26px;
+}
+main .c1 .col-md-6 p{
+    font-family: 'NunitoSans Regular';
+    font-size: 13.82px;
+    color: #787878;
+    line-height: 18px;
+    margin-bottom: 51px;
+    text-align: center;
+}
+main .c1 .col-md-6 img{
+    display: block;
+    margin: 0 auto;
+}
+main .c2big{
+    background: #f8f9f9;
+    overflow: hidden;
+    position: relative;
+}
+main .c2 img{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    object-fit: cover;
+    width: 50vw;
+    object-position: center;
+}
+main .c2{
+    height: 570px;
+}
+
+main .c2 .skills{
+    padding-top: 164px;
+}
+main .c2 .skills h3{
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    color: #171717;
+    text-transform: capitalize;
+    margin-bottom: 39px;
+    line-height: 21px;
+}
+main .c2 .skills p{
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 9px;
+}
+main .c2 .progress{
+    height: 3px;
+    width: 500px;
+    margin-bottom: 41px;
+    color: #007d2f !important;   
+}
+main .c2 .progress-bar{
+    background-color: #007d2f;
+}
+main .c2 .pb3{
+    margin-bottom: 0;
+}
+main .c3big{
+    width: 100%;
+    background: #007d2f;
+}
+main .c3 .col-lg-2{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 71px;
+    padding-bottom: 80px;
+    
+}
+main .c3 .col-lg-2 span{
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 12px;
+}
+main .c3 .col-lg-2 p:nth-child(2){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 13px;
+}
+main .c3 .col-lg-2 p:nth-child(3){
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 9px;
+}
+main .c4big{
+    background: #007d2f;
+}
+main .c4big .col-lg-3{
+    padding: 0;
+}
+main .c4big img{
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    object-position: center; 
+}
+main .c4big .moreworks{
+    display: block;
+    padding-top: 46px;
+    font-family: 'Montserrat Medium';
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 14px;
+    background: #007d2f;
+    padding-bottom: 40px;
+}
+main .c4big img{
+   width: 100%;
+}
+main .c4big .c4bigimg{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+}
+main .c4big .c4bigimg:hover .img-link{
+    opacity: 1;
+    transition: 1s;
+}
+main .c4big .row .img-link{
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: flex;
+    background: rgba(32, 22, 0, 0.58);  
+}
+main .c4big a:hover{
+    text-decoration: none;
+}
+main .c5{
+    padding: 98px 0 100px;
+}
+main .c5 h2{
+    font-family: 'Montserrat Medium';
+    font-size: 43px;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    line-height: 32px;
+    margin-bottom: 29px;
+}
+main .c5 p{
+    font-family: 'NunitoSans Regular';
+    font-size: 18px;
+    color: #787878;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+main .c5 .videopic img{
+    display: flex;
+    object-fit: contain;
+    object-position: center;
+}
+main .c5 .col-12{
+    position: relative;
+}
+
+main .c5 .videopic a span{
+color: white;
+width: 11px;
+}
+main .c5 .videopic a{
+    padding: 34px 37px;
+    background: #007d2f;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    display: flex;
+}
+main .c6big{
+    background: #f8f9f9;
+    padding: 103px 0 101px;
+}
+main .c6 .col-lg-3{
+    padding: 26px 0;
+}
+main .c6 span{
+    font-size: 47px;
+    line-height: 39px;
+    margin-bottom: 28px;
+}
+main .c6 h4{
+    color: black;
+    font-family: 'Montserrat Medium';
+    font-size: 15px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+main .c6 p{
+    font-family: 'NunitoSans Regular';
+    font-size: 15px;
+    color: #787878;
+    line-height: 23px;
+    text-align: center;
+    margin: 0;
+}
+main .c7big{
+    background: #007d2f;
+}
+main .c7{
+    padding-top: 150px;
+}
+
+main .c7big .carousel-item p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 19px;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+}
+main .c7big .carousel-item p:nth-child(2){
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    color: white;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+main .c7big ol li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+main .c7big ol .active{
+    width: 10px;
+    height: 10px;
+}
+main .c8{
+    padding: 61px 0 67px;
+}
+main .c9big{
+    background: #f8f9f9;
+    padding-top: 28px;
+}
+main .c9 h3{
+    color: black;
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    line-height: 21px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+main .c9 p{
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    color: #787878;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 39px;
+}
+main .c9 button{
+    display: block;
+    margin: 0 auto;
+    padding: 23px 25px 22px;
+    background: #007d2f;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    line-height: 9px;
+    margin-bottom: 100px;
+}
+main .c9 input{
+    color: #787878;
+    text-transform: capitalize;
+    font-family: 'NunitoSans Regular';
+    font-size: 15px;
+    line-height: 13px;
+    border: none;
+    border-radius: 0;
+    padding: 16px 0 19px 15px;
+}
+.c9 input:hover,
+.c9 input:focus{
+    box-shadow: none;
+}
+.c9 textarea:hover,
+.c9 textarea:focus{
+    box-shadow: none;
+}
+main .c9 textarea{
+    color: #787878;
+    text-transform: capitalize;
+    font-family: 'NunitoSans Regular';
+    font-size: 15px;
+    line-height: 13px;
+    resize: none;
+    height: 170px;
+    border: none;
+    border-radius: 0;
+    padding: 19px 0 0 15px;
+}
+
+/* ================================================= MAIN end ==================================================== */
+
+/* ================================================= FOOTER start ==================================================== */
+.c10big{
+    background: #141414;
+}
+footer .row{
+    height: 284px;
+}
+footer .col1 p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+}
+footer .col1 p:nth-child(2){
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col2 p{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col3 ul li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col3 ul li a:hover{
+    text-decoration: none;
+}
+
+/* ================================================= FOOTER end ==================================================== */
+@media(max-width: 991px){
+    .c2 .progress-img{
+        display: none;
+    }
+    .c2 .skills{
+        align-items: center;
+    }
+    .c8 .row .col-6{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:690px){
+    .c5 .videopic a{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+    .c5 .col-12{
+       padding: 0;
+    }
+}
+@media(max-width:767px){
+    header nav .container{
+        flex-direction: row;
+    }
+}
+@media(max-width:550px){
+    .c1 .col-12 h2{
+        font-size: 15px;
+    }
+    .c5 .c5_description h2{
+        font-size: 25px;
+    }
+    .c5 .c5_description p{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    main .c7{
+        padding-top: 50px;
+    }
+    main .c7big .carousel-item p:nth-child(1){
+        font-size: 16px;        
+    }
+    main .c7big .carousel-item p:nth-child(2){
+        font-size: 11px;
+    }
+    main .c6big, {
+        padding: 20px 0;
+    }
+    main .c5 .row,
+    main .c8 .row{
+        margin: 0;
+    }
+    
+    main .c5 .videopic a{
+        padding: 8px 14px 8px 8px;
+    }
+    main .c5 .videopic a span{
+        width: 7px;
+    }
+    main .c8 .col-6{
+        padding: 0;
+    }
+
+    
+}

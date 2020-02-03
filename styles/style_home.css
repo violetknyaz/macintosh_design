@@ -1,0 +1,141 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+/* ================================================= HEADER start ==================================================== */
+header nav{
+    padding: 17px 0;
+}
+header nav .container{
+    flex-direction: row-reverse;
+}
+header nav button:focus{
+outline: none;
+}
+header ul li a{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: #007d2f;
+}
+/* ================================================= HEADER end ==================================================== */
+
+
+
+/* ================================================= MAIN START ==================================================== */
+.c1big{
+    background-color: #007d2f;
+}
+.c1{
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+.c1 h1{
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    color: #171717;
+    line-height: 66px;
+}
+.c1 p{
+    color: #fefefe;
+    font-family: 'Roboto Medium';
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+    line-height: 26px;
+}
+.c2big .col-6{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.c2big{
+    overflow: hidden;
+}
+.c2big img{
+    width: 100%;
+    height: 100%;
+}
+.c2big .img-link:hover a span{
+    display: flex;
+}
+.c2big .img-link a span{
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: rgba(55, 137, 86, 0.85);
+} 
+
+/* ================================================= MAIN end ==================================================== */
+
+
+/* ================================================= FOOTER start ==================================================== */
+.c3big{
+    background: #141414;
+}
+footer .row{
+    height: 284px;
+}
+footer .col1 p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+}
+footer .col1 p:nth-child(2){
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col2 .tele li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col3 ul li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer ul li a:hover{
+    text-decoration: none;
+}
+/* ================================================= FOOTER end ==================================================== */
+@media(max-width:759px){
+    header nav .container{
+         flex-direction: row;
+    }
+    footer .c3big{
+        padding-top: 20px;
+    }
+}
+@media(max-width:500px){
+    .c1big h1{
+        font-size: 20px;
+    }
+    .c1big p{
+        font-size: 12px;
+    }
+    .c1{
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,160 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+/* ================================================= HEADER start ==================================================== */
+header nav{
+    padding: 17px 0;
+}
+header nav .container{
+    flex-direction: row-reverse;
+}
+header nav button:focus{
+outline: none;
+}
+header ul li a{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+header ul li:nth-child(3) a{
+    color: #007d2f;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: #007d2f;
+}
+/* ================================================= HEADER end ==================================================== */
+
+/* ================================================= MAIN START ==================================================== */
+.contact{
+    padding: 99px 0;
+    background: #f5f5f5;
+}
+.contact-info h2{
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    color: black;
+    text-transform: capitalize;
+    line-height: 21px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.contact-info p{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+}
+.contact-info ul li{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.contact-info ul li span{
+    font-family: 'NunitoSans Bold';
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+.form-group{
+    margin-bottom: 30px;
+}
+.contact-form input{
+    color: #787878;
+    text-transform: capitalize;
+    font-family: 'NunitoSans Regular';
+    font-size: 15px;
+    line-height: 13px;
+    border: none;
+    border-radius: 0;
+    padding: 16px 0 19px 15px;
+}
+.contact-form input:hover,
+.contact-form input:focus{
+    box-shadow: none;
+}
+.contact-form textarea{
+    color: #787878;
+    text-transform: capitalize;
+    font-family: 'NunitoSans Regular';
+    font-size: 15px;
+    line-height: 13px;
+    resize: none;
+    height: 170px;
+    border: none;
+    border-radius: 0;
+    padding: 19px 0 0 15px;
+}
+.contact-form textarea:hover,
+.contact-form textarea:focus{
+    box-shadow: none;
+}
+.contact-form button{
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    background: #007d2f;
+    border: none;
+    padding: 23px 26px 22px;
+    line-height: 9px;
+}
+.contact .mainimg{
+    display: flex;
+    margin-top: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+/* ================================================= MAIN end ==================================================== */
+
+
+/* ================================================= FOOTER start ==================================================== */
+.footer-content{
+    background: #141414;
+}
+footer .row{
+    height: 284px;
+}
+footer .footer-description_1 p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+}
+footer .footer-description_1 p:nth-child(2){
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_2 p{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_3 ul li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .footer-description_3 ul li a:hover{
+    text-decoration: none;
+}
+/* ================================================= FOOTER end ==================================================== */
+@media(max-width:767px){
+    header nav .container{
+        flex-direction: row;
+    }
+}    

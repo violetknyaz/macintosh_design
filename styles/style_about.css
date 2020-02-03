@@ -1,0 +1,211 @@
+@import 'fonts.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+/* ================================================= HEADER start ==================================================== */
+header nav{
+    padding: 17px 0;
+}
+header nav .container{
+    flex-direction: row-reverse;
+}
+header nav button:focus{
+    outline: none;
+}
+header ul li a{
+    color: #191919;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    line-height: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 16px;
+}
+header ul li a:hover{
+    text-decoration: none;
+    color: #007d2f;
+}
+/* ================================================= HEADER end ==================================================== */
+
+
+
+/* ================================================= MAIN START ==================================================== */
+.c1big{
+    background-color: #323232;
+}
+.c1{
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+.c1 h1{
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    color: white;
+    line-height: 66px;
+}
+.c1 p{
+    color: #fefefe;
+    font-family: 'NunitoSans Regular';
+    font-size: 17px;
+    text-align: center;
+    line-height: 26px;
+}
+.c2f{
+    background: #007d2f;
+}
+.c2{
+    padding: 62px 0 100px;
+}
+.c2 .column span{
+    font-size: 48px;
+    color: white;
+    line-height: 30px;
+    margin: 0;
+    
+}
+.c2 .column p:nth-child(2){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    margin: 0;
+}
+.c2 .column p:nth-child(3){
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+    color: white;
+    line-height: 9px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.c3big{
+    height: 570px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.c3 .img1{
+    position: absolute;
+    top: 0;
+    right: 120%;
+    object-fit: cover;
+    width: 50vw;
+    object-position: center;
+}
+.c3 .imgtext{
+    padding-top: 139px;
+}
+.c3 .imgtext h3{
+    color: black;
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    line-height: 62px;   
+}
+.c3 .imgtext p{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+}
+.c4{
+    padding: 103px 0 100px;
+}
+.c4 h3{
+    color: black;
+    font-family: 'Montserrat Medium';
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 64px;   
+}
+.c4 p{
+    color: #787878;
+    font-family: 'NunitoSans Regular';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+.c4 a{
+    padding: 23px 42px 22px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background: #007d2f;
+    line-height: 9px;
+    font-family: 'Montserrat Medium';
+    font-size: 12px;
+}
+.c4 a:hover{
+    text-decoration: none;
+}
+/* ================================================= MAIN end ==================================================== */
+
+
+/* ================================================= FOOTER start ==================================================== */
+footer{
+    background: #141414;
+}
+footer .row{
+    height: 284px;
+}
+footer .col1 p:nth-child(1){
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    color: white;
+}
+footer .col1 p:nth-child(2){
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col2 p{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col3 ul li a{
+    font-family: 'Myriad Pro';
+    font-size: 15px;
+    color: #bcbcbc;
+}
+footer .col3 ul li a:hover{
+    text-decoration: none;
+}
+/* ================================================= FOOTER end ==================================================== */
+@media(max-width:1199px){
+    main .c2 .column p:nth-child(3){
+        line-height: 15px;
+    }
+}
+@media(max-width:1162px){
+    .c3big{
+        height: 443px;
+    }
+    .c3big .imgtext{
+        padding-top: 50px;
+    }
+}
+@media(max-width:990px){
+    .c2 .col-6{
+        margin-bottom: 40px;
+    }
+    footer .c5{
+        padding-top: 20px;
+    }
+}
+@media(max-width:767px){
+    header nav .container{
+        flex-direction: row;
+    }
+    .c3big .imgtext .img1{
+        display: none;        
+    }
+}
+
